@@ -2,7 +2,11 @@
 import React from 'react'
 import Typerwriter from 'typewriter-effect'
 
-function Typewriter() {
+interface Props{
+  content : string
+}
+
+function Typewriter( {content} : Props) {
   return (
     <Typerwriter 
         options={{
@@ -10,7 +14,7 @@ function Typewriter() {
 
         }}
         onInit={(typewriter) => {
-            typewriter.typeString('Smart Shopping Starts Here 😉').pauseFor(1000).start()
+            typewriter.typeString(content).pauseFor(1000).start()
         }}
     />
 

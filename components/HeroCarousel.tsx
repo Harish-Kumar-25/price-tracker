@@ -16,7 +16,7 @@ function HeroCarousel() {
     ]; 
 
   return (
-    <div className="hero-carousel mt-2 ">
+    <div className="hero-carousel md:mt-16 ">
       <Carousel
         showThumbs={false}
         autoPlay
@@ -24,7 +24,7 @@ function HeroCarousel() {
         interval={2000}
         showArrows={false}
         showStatus={false}
-        className=" md:border-2 md:border-gray-300 md:hover:border-[#cb7aec] rounded-3xl"
+        className=" md:border-2 md:border-gray-300 md:hover:border-[#eb4444] rounded-3xl"
       >
         {imgList.map((item, index) => (
           <div key={index}>
